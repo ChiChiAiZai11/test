@@ -18,6 +18,9 @@
     pthread_mutex_destroy(pthread_mutex_t *mutex);
     //以静态方式创建锁
     pthread_mutex_t     mutex=PTHREAD_MUTEX_INITALIZER;
+    ```
+    
+    ```
     //以阻塞方式运行的。如果之前mutex被加锁了，那么程序会阻塞在这里.
     pthread_mutex_lock(pthread_mutex_t *mutex);   
 pthread_mutex_unlock(pthread_mutex_t *mutex);
